@@ -1,4 +1,4 @@
-#Poker Hand 
+# Poker Hand 
 
 * To compile and create package: 
  From the project root, run the following command

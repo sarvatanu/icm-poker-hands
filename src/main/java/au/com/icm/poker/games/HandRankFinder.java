@@ -87,24 +87,6 @@ public class HandRankFinder {
 
     public static boolean isThreeOfAKind(Card[] cards) {
 
-//        boolean check1 = cards[0].getRank() == cards[1].getRank() &&
-//                cards[0].getRank() == cards[2].getRank() &&
-//                cards[3].getRank() != cards[0].getRank() &&
-//                cards[4].getRank() != cards[0].getRank() &&
-//                cards[3].getRank() != cards[4].getRank() ;
-//
-//        boolean check2 = cards[1].getRank() == cards[2].getRank() &&
-//                cards[1].getRank() == cards[3].getRank() &&
-//                cards[0].getRank() != cards[1].getRank() &&
-//                cards[4].getRank() != cards[1].getRank() &&
-//                cards[0].getRank() != cards[4].getRank() ;
-//
-//        boolean check3 = cards[2].getRank() == cards[3].getRank() &&
-//                cards[2].getRank() == cards[4].getRank() &&
-//                cards[0].getRank() != cards[2].getRank() &&
-//                cards[1].getRank() != cards[2].getRank() &&
-//                cards[0].getRank() != cards[1].getRank() ;
-
         if (isFourOfAKind(cards) || isFullHouse(cards))
             return (false);
 
@@ -124,24 +106,6 @@ public class HandRankFinder {
 
     public static boolean isTwoPair(Card[] cards) {
 
-//        boolean check1 = cards[0].getRank() == cards[1].getRank() &&
-//                cards[2].getRank() == cards[3].getRank() &&
-//                cards[4].getRank() != cards[0].getRank() &&
-//                cards[4].getRank() != cards[2].getRank() &&
-//                cards[0].getRank() != cards[2].getRank() ;
-//
-//        boolean check2 = cards[0].getRank() == cards[1].getRank() &&
-//                cards[3].getRank() == cards[4].getRank() &&
-//                cards[2].getRank() != cards[0].getRank() &&
-//                cards[2].getRank() != cards[3].getRank() &&
-//                cards[0].getRank() != cards[3].getRank() ;
-//
-//        boolean check3 = cards[1].getRank() == cards[2].getRank() &&
-//                cards[3].getRank() == cards[4].getRank() &&
-//                cards[0].getRank() != cards[1].getRank() &&
-//                cards[0].getRank() != cards[3].getRank() &&
-//                cards[1].getRank() != cards[3].getRank() ;
-
         if (isFourOfAKind(cards) || isFullHouse(cards) || isThreeOfAKind(cards))
             return (false);
 
@@ -160,33 +124,6 @@ public class HandRankFinder {
     }
 
     public static boolean isPair(Card[] cards) {
-
-
-//        boolean check1 = cards[0].getRank() == cards[1].getRank() &&
-//                cards[2].getRank() != cards[3].getRank() &&
-//                cards[3].getRank() != cards[4].getRank() &&
-//                cards[0].getRank() != cards[2].getRank() &&
-//                cards[0].getRank() != cards[3].getRank() &&
-//                cards[0].getRank() != cards[4].getRank() ;
-//
-//        boolean check2 = cards[1].getRank() == cards[2].getRank() &&
-//                cards[3].getRank() != cards[4].getRank() &&
-//                cards[1].getRank() != cards[0].getRank() &&
-//                cards[1].getRank() != cards[3].getRank() &&
-//                cards[1].getRank() != cards[4].getRank() ;
-//
-//        boolean check3 = cards[2].getRank() == cards[3].getRank() &&
-//                cards[0].getRank() != cards[1].getRank() &&
-//                cards[2].getRank() != cards[0].getRank() &&
-//                cards[2].getRank() != cards[1].getRank() &&
-//                cards[2].getRank() != cards[4].getRank() ;
-//
-//        boolean check4 = cards[3].getRank() == cards[4].getRank() &&
-//                cards[1].getRank() != cards[2].getRank() &&
-//                cards[3].getRank() != cards[0].getRank() &&
-//                cards[3].getRank() != cards[1].getRank() &&
-//                cards[3].getRank() != cards[2].getRank() ;
-
 
         if (isFourOfAKind(cards) || isFullHouse(cards) || isThreeOfAKind(cards) || isTwoPair(cards))
             return (false);
